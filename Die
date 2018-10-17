@@ -1,0 +1,15 @@
+package die;
+
+public class Die {
+	
+	private int side;
+	private int num;
+	public Die(int sides) {
+		num=sides;
+	}
+	public int roll() {
+		side=(int)(Math.random()*num);
+		side++;
+		return side;
+	}
+}
